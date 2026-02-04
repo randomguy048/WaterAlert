@@ -2,7 +2,7 @@
 * The WaterAlert will operate on an interval of 30 minutes, on an hour format. (0.5)
 * Button A will dismiss the reminder and sound a tone to signal proper dismissal.
 * Button B will show the version number.
-* The button on the back has 2 functions. When a short press is detected, it will reboot and the timer will be reset, along with the variables resetting to its defaults. When a long press for 5 seconds are detected, it will shut off. You can turn it on by short pressing it again.
+* The button on the back has 2 functions. When a short press is detected, it will reboot and the timer will be reset, along with the variables resetting to its defaults. When a long press for 5 seconds is detected, it will shut off. You can turn it on by short pressing it again.
 
 
 ## Use as Extension

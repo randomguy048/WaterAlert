@@ -26,11 +26,11 @@ basic.forever(function () {
             hours_to_remind += -0.5
             music.stopMelody(MelodyStopOptions.All)
             basic.showLeds(`
-                . . # # #
-                . . # . #
-                . . # # #
                 . . . . .
-                . . . . .
+                . . . . #
+                . . . # .
+                # . # . .
+                . # . . .
                 `)
             music.play(music.stringPlayable("C F G C F G B C5 ", 500), music.PlaybackMode.UntilDone)
             basic.clearScreen()

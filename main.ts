@@ -16,7 +16,7 @@ music.play(music.stringPlayable("B A G F E D C C5 ", 550), music.PlaybackMode.Un
 music.play(music.tonePlayable(523, music.beat(BeatFraction.Breve)), music.PlaybackMode.UntilDone)
 basic.clearScreen()
 basic.forever(function () {
-    basic.pause(1800000)
+    basic.pause(5000)
     while (0 < hours_to_remind) {
         music.play(music.stringPlayable("E - C - - E C F ", 600), music.PlaybackMode.LoopingInBackground)
         basic.showLeds(`
@@ -36,9 +36,9 @@ basic.forever(function () {
                 # . # . .
                 . # . . .
                 `)
-            music.play(music.stringPlayable("C F G C F G B C5 ", 500), music.PlaybackMode.UntilDone)
+            music.play(music.stringPlayable("C F G C F G B C5 ", 550), music.PlaybackMode.UntilDone)
             basic.clearScreen()
-            basic.pause(1800000)
+            basic.pause(5000)
             continue;
         }
         basic.pause(420)
@@ -52,14 +52,14 @@ basic.forever(function () {
                 . . . . .
                 . . . . .
                 `)
-            basic.pause(5000)
+            basic.pause(1000)
             minutes_to_sleep += -30
         }
-    } else {
         music.play(music.stringPlayable("- - - - - - C D ", 70), music.PlaybackMode.UntilDone)
         music.play(music.stringPlayable("B A G F E D C C5 ", 550), music.PlaybackMode.UntilDone)
         music.play(music.stringPlayable("C5 C D E B C5 C C ", 550), music.PlaybackMode.UntilDone)
         basic.clearScreen()
         minutes_to_sleep += 510
     }
+    hours_to_remind += 15.5
 })

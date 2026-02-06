@@ -1,5 +1,5 @@
 input.onButtonPressed(Button.B, function () {
-    basic.showString("V1.2")
+    basic.showString("V1.2.1")
 })
 let minutes_to_sleep = 510
 let hours_to_remind = 15.5
@@ -16,7 +16,7 @@ music.play(music.stringPlayable("B A G F E D C C5 ", 550), music.PlaybackMode.Un
 music.play(music.tonePlayable(523, music.beat(BeatFraction.Breve)), music.PlaybackMode.UntilDone)
 basic.clearScreen()
 basic.forever(function () {
-    basic.pause(5000)
+    basic.pause(1800000)
     while (0 < hours_to_remind) {
         music.play(music.stringPlayable("E - C - - E C F ", 600), music.PlaybackMode.LoopingInBackground)
         basic.showLeds(`
@@ -38,7 +38,7 @@ basic.forever(function () {
                 `)
             music.play(music.stringPlayable("C F G C F G B C5 ", 550), music.PlaybackMode.UntilDone)
             basic.clearScreen()
-            basic.pause(5000)
+            basic.pause(1800000)
             continue;
         }
         basic.pause(420)
@@ -53,7 +53,7 @@ basic.forever(function () {
                 . . . . .
                 `)
             basic.pause(1000)
-            minutes_to_sleep += -30
+            minutes_to_sleep += 1800000
         }
         music.play(music.stringPlayable("- - - - - - C D ", 70), music.PlaybackMode.UntilDone)
         music.play(music.stringPlayable("B A G F E D C C5 ", 550), music.PlaybackMode.UntilDone)

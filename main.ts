@@ -57,7 +57,7 @@ basic.forever(function () {
         }
         music.play(music.stringPlayable("- - - - - - C D ", 70), music.PlaybackMode.UntilDone)
         music.play(music.stringPlayable("B A G F E D C C5 ", 550), music.PlaybackMode.UntilDone)
-        music.play(music.stringPlayable("C5 C D E B C5 C C ", 550), music.PlaybackMode.UntilDone)
+        music.play(music.stringPlayable("C5 C D E B C5 B C5 ", 550), music.PlaybackMode.UntilDone)
         basic.clearScreen()
         minutes_to_sleep += 510
     }

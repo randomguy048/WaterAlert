@@ -1,5 +1,5 @@
 # Introducing the WaterAlert!
-This device was made with hard work at Garry Middle School, by team 7 in the MESA class. This device is intended to be used by people who need help drinking water on a regular schedule, such as our elders, and other people. With that said, let's cut to the next section!
+This device was made with hard work at Garry Middle School, by team 7 in the MESA class. This device is intended to be used by people who need help drinking water on a regular schedule, such as our elders, and other people. It is coded to remind the user to drink approximately 4.5 fl oz. of water every 30 minutes. With that said, let's cut to the next section!
 
 ## How the code works:
 * When powered on via a power supply, or battery pack, it will display "Hi", and shortly after it will make a startup sound. 

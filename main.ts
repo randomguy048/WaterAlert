@@ -52,8 +52,8 @@ basic.forever(function () {
                 . . . . .
                 . . . . .
                 `)
-            basic.pause(1000)
-            minutes_to_sleep += 1800000
+            basic.pause(1800000)
+            minutes_to_sleep += 510
         }
         music.play(music.stringPlayable("- - - - - - C D ", 70), music.PlaybackMode.UntilDone)
         music.play(music.stringPlayable("B A G F E D C C5 ", 550), music.PlaybackMode.UntilDone)

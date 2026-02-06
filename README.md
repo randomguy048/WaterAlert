@@ -1,9 +1,15 @@
+# Introducing the WaterAlert!
+This device was made with hard work at Garry Middle School, by team 7 in the MESA class. This device is intended to be used by people who need help trying to drink water on a regular schedule, and is also for the elderly. With that being said, let's cut to the next section.
+
 ## How the code works:
-* The WaterAlert will operate on an interval of 30 minutes, on an hour format. (0.5)
+* When powered on via a power supply, or battery pack, it will display "Hi", and shortly after it will make a startup sound. 
+* The WaterAlert device will operate on an interval of 30 minutes, on an hour format. (0.5)
 * Button A will dismiss the reminder and sound a tone to signal proper dismissal.
 * Button B will show the version number.
 * The button on the back has 2 functions. When a short press is detected, it will reboot and the timer will be reset, along with the variables resetting to its defaults. When a long press for 5 seconds is detected, it will shut off. You can turn it on by short pressing it again.
 
+
+‼️FOR THE DEVELOPERS BELOW‼️
 
 ## Use as Extension
 

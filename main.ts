@@ -1,9 +1,10 @@
 input.onButtonPressed(Button.B, function () {
     basic.showString("V1.2.1")
+    music.play(music.stringPlayable("C5 B C B C5 C C5 B ", 325), music.PlaybackMode.UntilDone)
 })
 let minutes_to_sleep = 510
-let hours_to_remind = 15.5
-led.setBrightness(5)
+let hours_to_remind = 10
+led.setBrightness(50)
 basic.showLeds(`
     # . # . #
     # . # . .
@@ -14,6 +15,7 @@ basic.showLeds(`
 music.play(music.stringPlayable("- - - - - - C D ", 70), music.PlaybackMode.UntilDone)
 music.play(music.stringPlayable("B A G F E D C C5 ", 550), music.PlaybackMode.UntilDone)
 music.play(music.tonePlayable(523, music.beat(BeatFraction.Breve)), music.PlaybackMode.UntilDone)
+music.play(music.stringPlayable("C D E B C5 C5 B C5 ", 550), music.PlaybackMode.UntilDone)
 basic.clearScreen()
 basic.forever(function () {
     basic.pause(1800000)

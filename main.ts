@@ -1,6 +1,5 @@
 input.onButtonPressed(Button.B, function () {
     basic.showString("V1.2.1")
-    music.play(music.stringPlayable("C5 B C B C5 C C5 B ", 325), music.PlaybackMode.UntilDone)
 })
 let minutes_to_sleep = 510
 let hours_to_remind = 10
@@ -61,7 +60,7 @@ basic.forever(function () {
         music.play(music.stringPlayable("B A G F E D C C5 ", 550), music.PlaybackMode.UntilDone)
         music.play(music.stringPlayable("C5 C D E B C5 B C5 ", 550), music.PlaybackMode.UntilDone)
         basic.clearScreen()
-        minutes_to_sleep += 510
+        hours_to_remind += 15.5
     }
-    hours_to_remind += 15.5
+    minutes_to_sleep += 510
 })
